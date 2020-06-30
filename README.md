@@ -28,21 +28,27 @@ Here is a short video to show my result
 My pipeline consists of 6 steps.
 
 First, I convert the images to grayscale:
+
 <img src="examples/grayscale.png"/>
 
 Second, I apply Gaussian smoothing with a kernel size = 3:
+
 <img src="examples/blur.png"/>
 
 Third, I define parameters for Canny and apply them to the images:
+
 <img src="examples/canny.png"/>
 
 Then, I define a four sided polygon and create a masked edges:
+
 <img src="examples/roi.png"/>
 
 Next, I define the Hough transform parameters and run Hough Transform on edge detected images:
+
 <img src="examples/hough_transform.png"/>
 
 Finally, I combine these lines into original images to get the final image:
+
 <img src="examples/combined.png"/>
 
 In order to draw a single line on the left the right lanes, I modify the draw_lines() function by following step:
